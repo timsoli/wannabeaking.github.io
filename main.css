@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Concert One', cursive;
+}
+/*navigation bar*/
+nav {
+  display: flex;
+  background: #544d97;
+  align-items: center;
+  position: relative;
+  padding: 50px;
+}
+.nav-list{
+  position: relative;
+  left:37%;
+}
+/*loggggggggooooooooo logo*/
+.logo{
+position: relative;
+left: 5%;
+}
+.logo a {
+  font-size: 2rem;
+  color: rgb(223, 215, 215);
+  font-weight: bold;
+  margin: 15px auto;
+  padding: 1.5rem 2rem;
+  letter-spacing: .65rem;
+  text-shadow: 2px 2px rgb(45, 54, 57);
+}
+nav a {
+  color: rgb(223, 215, 215);
+  padding: 0 1.5rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  letter-spacing: .12rem;
+  transition: all 0.4s;
+  text-shadow: 2px 2px rgb(36, 51, 57);
+}
+nav a:hover{
+  color: #FFE9B1;
+}
+.logo a:hover{
+  color: #FFE9B1;
+  transition: all 0.3s;
+}
+/* HERO details!!!!!*/
+.hero{
+  background-color:white;
+}
+.hero-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  padding: 5rem calc((100vw - 2000px) / 2);
+}
+.column-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #e0765e;
+  padding: 0rem 2rem;
+}
+.column-left h1{
+  margin-bottom: 1rem;
+  margin-left: 100px;
+  font-size: 3rem;
+  text-shadow: 2px 2px rgb(3, 3, 3);
+}
+.column-left p{
+  margin-left: 100px;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  line-height: 1.5;
+  color: #585859;
+  text-shadow: 1px 1px rgb(1, 1, 1);
+}
+button {
+  margin-left: 100px;
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: #585859;
+  background-color: white;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  transition: all .3s;
+  padding: 20px 32px;
+  box-shadow: 0px 16px 32px 0px rgb(0 0 0 / 6%);
+}
+button:hover{
+  background: #ca624b;
+  color: rgb(243, 248, 244);
+}
+.column-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 2rem;
+}
+.hero-image{
+  opacity: .9;
+  width: 50%;
+  border: 3px grey solid;
+}
+footer{
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 30px;
+  color:rgb(248, 244, 244);
+  background-color:#544d97;
+  text-shadow: 1px 1px rgb(12, 11, 12);
+  letter-spacing: .25rem;
+}
+
+@media  screen and (max-width: 1024px) {
+  .hero-container{
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .column-left{
+    font-size: 10px;
+  }
+}
